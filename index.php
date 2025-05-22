@@ -1,8 +1,13 @@
+<DOCTYPE html>
 <html>
   <head>
-    <title>PHP Test</title>
+    <title>COSC 4806 - Assignment 1 (Matthew Del Fierro)</title>
   </head>
   <body>
-    <?php echo '<p>Hello World</p>'; ?> 
 
+    <h1>Assignment 1: Login Page</h1>
+
+    <p><a href="/login.php"> Click this link to login!</a></p>
+    
+  </body>
 </html>
