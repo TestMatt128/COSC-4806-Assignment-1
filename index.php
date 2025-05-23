@@ -5,6 +5,9 @@ session_start();
 // If not, automatically redirect them to the login page, fyi; login.php
 if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true)
   header("Location: /login.php");
+
+// If the user is logged in, the date when the user logged in will be displayed.
+$date = date('m/d/Y');
 ?>
 
 <DOCTYPE html>
@@ -16,8 +19,7 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true)
 
     <h1>Assignment 1: Login Page</h1>
     <!-- This should be the check to see if the username is verified and authenticated. -->
-    <p> Welcome to the login page, <?=$_SESSION['username']?>!</p>
-    
+    <p> Welcome to the login page, <?=$_SESSION['username']?>! You logged in on <?=$date?> </p>
   </body>
 
   <!-- The link to start the login process again whenever needed to log out. -->
