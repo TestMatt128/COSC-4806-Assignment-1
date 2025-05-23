@@ -1,7 +1,9 @@
 <?php
 
+  session_start()
+
   $valid_username = "Matt";
-  $valid_password = "password";
+  $valid_password = "TestMatt128";
 
   $username = $_POST['username'];
   $password = $_POST['password'];
@@ -12,4 +14,4 @@
     echo "Invalid username or password. Please try again.";
   }
 
->
+?>
