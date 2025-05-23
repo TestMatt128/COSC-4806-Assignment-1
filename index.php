@@ -6,8 +6,8 @@ session_start();
 if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true)
   header("Location: /login.php");
 
-// If the user is logged in, the date when the user logged in will be displayed.
-$date = date('m/d/Y');
+// If the user is logged in, the date when the user logged in will be displayed. So we initialize the date variable here.
+$date = date('m/d/Y'); 
 ?>
 
 <DOCTYPE html>
@@ -18,8 +18,8 @@ $date = date('m/d/Y');
   <body>
 
     <h1>Assignment 1: Login Page</h1>
-    <!-- This should be the check to see if the username is verified and authenticated. -->
-    <p> Welcome to the login page, <?=$_SESSION['username']?>! You logged in on <?=$date?> </p>
+    <!-- This should be the check to see if the username is verified and authenticated. Shows the date when the user logged in. -->
+    <p> Welcome to the login page, <?=$_SESSION['username']?>! You logged in on <?=$date?>. </p>
   </body>
 
   <!-- The link to start the login process again whenever needed to log out. -->
