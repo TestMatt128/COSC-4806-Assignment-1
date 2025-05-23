@@ -23,7 +23,7 @@
 
     // After the login fail, we must redirect them to the login page again.
     // The fail counter will be displayed every time they fail to login and see this message.
-    print "Login failed. Total fails: " . $_SESSION['login_attempt_fails'];
+    echo "Login failed. Total fails: " . $_SESSION['login_attempt_fails'];
     header("Location: /login.php");
   }
 

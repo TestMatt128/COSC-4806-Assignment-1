@@ -15,8 +15,8 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true)
   <body>
 
     <h1>Assignment 1: Login Page</h1>
-    <!-- This should be the check to see if the username is verified and authenticated. As a bonus, show the user how many attempts it took to finally log in! -->
-    <p> Welcome to the login page, <?=$_SESSION['username']?>! It took a total of <?=$_SESSION['login_attempts_fails'] ?> attempt(s) to successfully log in!</p>
+    <!-- This should be the check to see if the username is verified and authenticated. -->
+    <p> Welcome to the login page, <?=$_SESSION['username']?>!</p>
     
   </body>
 

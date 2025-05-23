@@ -17,6 +17,7 @@
     <input type="password" id="password" name="password">
     <br><br>
     <input type="submit" value="Submit">
+  <!-- After the information is put in and the Submit button is clicked, one of 2 outcomes will activate. Check the validate.php for both conditions. -->
   </form>
 </body>
 </html>
