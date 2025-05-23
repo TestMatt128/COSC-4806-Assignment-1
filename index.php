@@ -13,11 +13,12 @@ session_start();
   <body>
 
     <h1>Assignment 1: Login Page</h1>
-
+    <!-- This should be the check to see if the username is verified and authenticated. -->
     <p> Welcome to the login page, <?=$_SESSION['username'] ?></p>
     
   </body>
 
+  <!-- The link to start again whenever needed to log out. -->
   <footer>
      <p><a href="/logout.php"> Click this link to logout and start again!</a></p>
   </footer>

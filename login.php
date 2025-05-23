@@ -6,6 +6,7 @@
 <body>
     <h1>Login Form</h1>
 
+  <!-- The components for the login form. -->
   <form action="/validate.php" method="post">
     <label for=username>Username</label>
     <br>

@@ -2,6 +2,7 @@
 
   session_start();
 
+  // Use this username and password as a valid login when checking (To the Professor)
   $valid_username = "Matt";
   $valid_password = "TestMatt128";
 
