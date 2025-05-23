@@ -2,14 +2,14 @@
 
   session_start();
 
-  // Use this username and password as a valid login when checking (To the Professor)
+  // *Use this username and password as a valid login when checking (To the Professor)*
   $valid_username = "Matt";
   $valid_password = "TestMatt128";
 
   $username = $_REQUEST['username'];
   $_SESSION['username'] = $username;
   $password = $_REQUEST['password'];
-  // If the authentication is successful, the user will be sent to the index page, indicated that the user is logged in.
+  // If the authentication is successful, the user will be sent to the index page, indicating that the user is logged in.
   if ($username == $valid_username && $password == $valid_password) {
     $_SESSION['authenticated'] = true;
     header("Location: /");

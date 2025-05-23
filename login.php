@@ -18,6 +18,7 @@
     <br><br>
     <input type="submit" value="Submit">
   <!-- After the information is put in and the Submit button is clicked, one of 2 outcomes will activate. Check the validate.php for both conditions. -->
+  <!--Please use the username: Matt and password: TestMatt128 for the successful login.-->
   </form>
 </body>
 </html>
