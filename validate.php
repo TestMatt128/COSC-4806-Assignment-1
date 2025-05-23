@@ -9,7 +9,7 @@
   $username = $_REQUEST['username'];
   $_SESSION['username'] = $username;
   $password = $_REQUEST['password'];
-
+  // If the authentication is successful, the user will be sent to the index page, indicated that the user is logged in.
   if ($username == $valid_username && $password == $valid_password) {
     $_SESSION['authenticated'] = true;
     header("Location: /");
@@ -21,10 +21,10 @@
       $_SESSION['login_attempt_fails'] = 1;
     }
 
-    // After the login fail, we must redirect them to the login page again.
     // The fail counter will be displayed every time they fail to login and see this message.
-    echo "Login failed. Total fails: " . $_SESSION['login_attempt_fails'];
-    header("Location: /login.php");
+    print "Login failed. Total fails: " . $_SESSION['login_attempt_fails'];
+    // After the login fail, we must redirect them to the login page again. This is the link to redirect them.
+    echo "<br><a href='/login.php'>Click here to try again!</a>";
   }
 
 ?>

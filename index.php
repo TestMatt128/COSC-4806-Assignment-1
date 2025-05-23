@@ -20,7 +20,7 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true)
     
   </body>
 
-  <!-- The link to start again whenever needed to log out. -->
+  <!-- The link to start the login process again whenever needed to log out. -->
   <footer>
      <p><a href="/logout.php"> Click this link to logout and start again!</a></p>
   </footer>
