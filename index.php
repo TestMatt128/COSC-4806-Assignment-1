@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-
-
 // We first need to check if the user is logged in.
 // If not, automatically redirect them to the login page, fyi; login.php
 ?>
